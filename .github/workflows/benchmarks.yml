@@ -38,8 +38,7 @@ jobs:
     # The shared `ubuntu-latest` (2 vCPU) produces noisy, non-comparable baselines.
     # Targets the org's self-hosted runner group (8+ vCPU AWS runners) by group
     # name rather than a label — the individual runners are ephemeral/autoscaled.
-    runs-on:
-      group: aws-general-8-plus
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: tokenizers
