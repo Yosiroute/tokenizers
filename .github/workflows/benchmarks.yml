@@ -224,8 +224,7 @@ jobs:
   benchmark-python:
     name: Run Python benchmarks
     # Same dedicated runner group as the Rust job — keeps Python baselines comparable.
-    runs-on:
-      group: aws-general-8-plus
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
