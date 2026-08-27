@@ -80,7 +80,7 @@ from tokenizers.trainers import BpeTrainer
 trainer = BpeTrainer(special_tokens=["[UNK]", "[CLS]", "[SEP]", "[PAD]", "[MASK]"])
 tokenizer.train(files=["wiki.train.raw", "wiki.valid.raw", "wiki.test.raw"], trainer=trainer)
 ```
-
+bibibi
 Once your tokenizer is trained, encode any text with just one line:
 ```python
 output = tokenizer.encode("Hello, y'all! How are you 😁 ?")
